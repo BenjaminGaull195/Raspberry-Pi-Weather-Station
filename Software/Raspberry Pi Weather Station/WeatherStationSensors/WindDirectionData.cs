@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace WeatherStationSensors
 {
-    public interface IRainGuage
+    public abstract class WindDirectionData
     {
-        public RainfallData GetRainfall();
+        public string Direction { get; internal set; }
     }
 }

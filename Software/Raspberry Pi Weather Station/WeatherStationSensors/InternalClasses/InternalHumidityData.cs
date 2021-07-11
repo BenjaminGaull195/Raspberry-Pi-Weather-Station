@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace WeatherStationSensors
 {
-    public interface IRainGuage
+    internal class InternalHumidityData : HumidityData
     {
-        public RainfallData GetRainfall();
+        InternalHumidityData(int Humidity)
+        {
+            this.Humidity = Humidity;
+        }
     }
 }

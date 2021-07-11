@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherStationLibrary.Sensors
+namespace WeatherStationSensors
 {
-    class SPISensor : Sensor
+    public abstract class SPISensor : Sensor
     {
+        public SPISensor() : base()
+        {
+
+        }
     }
 }

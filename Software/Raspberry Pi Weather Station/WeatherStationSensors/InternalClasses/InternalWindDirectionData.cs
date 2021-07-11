@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace WeatherStationSensors
 {
-    public abstract class WireSensor : Sensor
+    internal class InternalWindDirectionData : WindDirectionData
     {
-        public WireSensor() : base()
+        public InternalWindDirectionData(string Direction)
         {
-
+            this.Direction = Direction;
         }
     }
 }

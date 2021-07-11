@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace WeatherStationSensors
 {
-    public interface IRainGuage
+    internal class InternalUVData : UVData
     {
-        public RainfallData GetRainfall();
+        public InternalUVData(int UVIndex)
+        {
+            this.UVIndex = UVIndex;
+        }
     }
 }

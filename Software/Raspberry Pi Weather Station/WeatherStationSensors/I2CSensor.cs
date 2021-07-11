@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherStationLibrary.Sensors
+namespace WeatherStationSensors
 {
-    class I2CSensor : Sensor
+    public abstract class I2CSensor : Sensor
     {
+        public I2CSensor(int I2CAddr) : base()
+        {
+
+        }
     }
 }

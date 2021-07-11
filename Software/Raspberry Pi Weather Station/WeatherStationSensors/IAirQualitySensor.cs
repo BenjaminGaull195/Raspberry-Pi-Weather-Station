@@ -4,9 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherStationLibrary.Sensors
+namespace WeatherStationSensors
 {
-    interface IAirQualitySensor
+    public interface IAirQualitySensor
     {
+        public int GetAirQuality();
+
+        public IEnumerable<AirQualityData> GetAirQualityDetailed();
     }
 }

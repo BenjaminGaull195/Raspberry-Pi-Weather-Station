@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherStationLibrary.Sensors
+namespace WeatherStationSensors
 {
-    interface IUVSensor
+    public interface IUVSensor
     {
+        public UVData GetUVIndex();
     }
 }

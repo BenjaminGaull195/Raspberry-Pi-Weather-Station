@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace WeatherStationSensors
 {
-    public abstract class WireSensor : Sensor
+    internal class InternalRainfallData : RainfallData
     {
-        public WireSensor() : base()
+        public InternalRainfallData(double Value, string Units)
         {
-
+            this.Value = Value;
+            this.Units = Units;
         }
     }
 }

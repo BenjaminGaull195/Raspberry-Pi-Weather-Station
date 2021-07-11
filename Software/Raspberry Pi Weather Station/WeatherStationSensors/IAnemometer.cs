@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WeatherStationLibrary.Sensors
+namespace WeatherStationSensors
 {
-    interface IAnemometer
+    public interface IAnemometer
     {
+        public WindSpeedData GetWindSpeed();
     }
 }

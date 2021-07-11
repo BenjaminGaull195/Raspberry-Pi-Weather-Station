@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace WeatherStationSensors
 {
-    public abstract class WireSensor : Sensor
+    internal class InternalWindSpeedData : WindSpeedData
     {
-        public WireSensor() : base()
+        public InternalWindSpeedData(double Speed, string Units)
         {
-
+            this.Speed = Speed;
+            this.Units = Units;
         }
     }
 }
