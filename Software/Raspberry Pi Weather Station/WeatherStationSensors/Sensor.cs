@@ -1,4 +1,9 @@
-﻿using System;
+﻿// <copyright file="Sensor.cs" company="BenjaminGaull195">
+// Copyright (c) BenjaminGaull195. All rights reserved.
+// Licensed under the MIT license. See LICENSE file in the project root for full license information.
+// </copyright>
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +11,21 @@ using System.Threading.Tasks;
 
 namespace WeatherStationSensors
 {
+    /// <summary>
+    /// Abstract base class for a sensor.
+    /// </summary>
     public abstract class Sensor
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Sensor"/> class.
+        /// </summary>
         public Sensor()
         {
         }
 
+        /// <summary>
+        /// Bitmask enum values for supported sensor types.
+        /// </summary>
         public enum SensorType
         {
             /// <summary>
@@ -56,10 +70,13 @@ namespace WeatherStationSensors
         }
 
         /// <summary>
-        /// Bitmask used to determine what functionallity a sensor provides
+        /// Gets the bitmask used to determine what functionallity a sensor provides.
         /// </summary>
-        public abstract int SensorTypeMask { get; }
+        public abstract SensorType SensorTypeMask { get; }
 
+        /// <summary>
+        /// Gets the name of the sensor.
+        /// </summary>
         public abstract string SensorName { get; }
     }
 }

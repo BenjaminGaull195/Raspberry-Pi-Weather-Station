@@ -1,7 +1,12 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\Local Repos\Repos\BenjaminGaull195\Raspberry-Pi-Weather-Station\Software\Raspberry Pi Weather Station\WeatherStationSensors\WeatherStationSensors.xml</DocumentationFile>
+    <OutputPath>Documentation\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <AdditionalFiles Include="..\StyleCopConfig\stylecop.json" Link="stylecop.json" />
