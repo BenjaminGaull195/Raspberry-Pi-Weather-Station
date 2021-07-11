@@ -5,5 +5,5 @@ A modular Weather Station application utilizing Microsofts Dotnet and sample RPi
 ____
 
 
-# Supported Sensors:
+### Supported Sensors:
 
